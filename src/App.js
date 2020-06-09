@@ -4,10 +4,11 @@ import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import "./App.css";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import blue from "@material-ui/core/colors/blue";
+//import blue from "@material-ui/core/colors/blue";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import logo1 from "./logo.svg";
+import GetData from "./Components/Getdata";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -42,6 +43,7 @@ function App() {
               <Typography variant="h1" component="h2">
                 h1. Heading
               </Typography>
+              <GetData />
 
               <Switch>
                 <Route exact path="/"></Route>

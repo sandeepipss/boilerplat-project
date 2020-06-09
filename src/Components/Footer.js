@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, CssBaseline, Typography } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import Toolbar from "@material-ui/core/Toolbar";
 import AppBar from "@material-ui/core/AppBar";
 import { makeStyles } from "@material-ui/core/styles";
@@ -26,7 +26,7 @@ function Footer() {
   const classes = useStyles();
   return (
     <Container>
-      <AppBar position="fixed" color="Secondary" className={classes.appBar}>
+      <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
           <div className="copyright" id="copyright">
             © {new Date().getFullYear()}, Designed & Coded by{" "}

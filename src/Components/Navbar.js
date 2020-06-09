@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button";
 import Switch from "@material-ui/core/Switch";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
+//import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 
@@ -26,14 +26,14 @@ class Navbar extends React.Component {
       <div className={classes.root}>
         <AppBar position="static">
           <Toolbar variant="dense">
-            <IconButton edge="start" color="inherit" aria-label="menu">
+            <IconButton edge="start" aria-label="menu">
               <MenuIcon />
             </IconButton>
 
-            <Button variant="contained" color="primary" href="/">
+            <Button variant="contained" href="/">
               Home
             </Button>
-            <Button variant="contained" color="primary" href="/">
+            <Button variant="contained" href="/">
               About
             </Button>
             <div className={classes.switch}>
@@ -41,7 +41,7 @@ class Navbar extends React.Component {
                 checked={this.props.darkMode}
                 onChange={() => this.props.setDarkMode(!this.props.darkMode)}
                 name="checkedB"
-                label="Secondary"
+                label="secondary"
               />
             </div>
           </Toolbar>
