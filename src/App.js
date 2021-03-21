@@ -9,6 +9,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import logo1 from "./logo.svg";
 import GetData from "./Components/Getdata";
+import Home from "./Components/Home";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -43,6 +44,7 @@ function App() {
               <Typography variant="h1" component="h2">
                 h1. Heading
               </Typography>
+              <Home />
               <GetData />
 
               <Switch>
